@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:mistyrose;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -300px;
+}
+
+.nome{
+    height: 250px;
+    width: 250px;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-name: andar;
+    animation-duration: 15s;
+    border-radius: 10%;    
+
+}
+
+.Oi {
+    margin-top: 45%;
+    text-align: center;
+    color: white;
+}
+
+.Oi:hover{
+    color:yellow
+}
+
+@keyframes andar {
+    0%{
+        background-color: pink;
+    }
+    10%{
+        background-color: powderblue;
+        transform: translateX(500px);
+    }
+
+    50%{
+        background-color: plum;
+        transform: translatex(-500px);
+    }
+
+    to{
+      background-color: skyblue;
+     
+    }
+}
